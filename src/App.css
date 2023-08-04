@@ -1,0 +1,79 @@
+
+/* .App {
+  padding: 30px;
+  display: flex;
+}
+
+.App > div {
+  margin-right: 50px;
+}
+
+.error {
+  border: red 1px solid;
+}
+
+.error-message {
+  color: red;
+}
+
+.active-filter {
+  background-color: aquamarine;
+}
+
+.is-done {
+  opacity: 0.5;
+} */
+
+/* .contener{
+  display: flex;
+  justify-content: center;
+} */
+.on {
+  padding: 30px;
+  display: flex;
+  display: flex;
+
+  justify-content: center;
+  background-color: green;
+  width: 50px;
+}
+.of {
+  padding: 30px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  background-color: rgb(176, 0, 0);
+}
+.tablo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(176, 0, 0);
+}
+.tabloOn{
+  padding: 30px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(50, 110, 0);
+  padding: 2px;
+}
+.onStart{
+  padding: 30px;
+  display: flex;
+  padding: 30px;
+  display: flex;
+ 
+  width: 50px;
+  height: 50px;
+  padding: 0 4px;
+  
+ 
+  background-color: rgb(255, 255, 255);
+}
+
+.btn{
+  background-color: blue;
+}
