@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/onOff/static/css/main.a0424234.css",
+    "main.js": "/onOff/static/js/main.8512970c.js",
+    "index.html": "/onOff/index.html",
+    "main.a0424234.css.map": "/onOff/static/css/main.a0424234.css.map",
+    "main.8512970c.js.map": "/onOff/static/js/main.8512970c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0424234.css",
+    "static/js/main.8512970c.js"
+  ]
+}
