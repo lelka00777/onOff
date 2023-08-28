@@ -1,5 +1,10 @@
+import { useState } from "react";
 import "./App.css";
+import { OnOf } from "./Components/OnOf";
 import { OnOff } from "./onOff";
+import { UncontrollerAcordion } from "./UncontrollAcordion";
+import { Ratting } from "./Ratting";
+import { UncontrolRatting } from "./UncontrolRatting";
 // import { Acordion } from "./Acordion";
 // import { useState } from "react";
 // import { Ratting } from "./Ratting";
@@ -12,7 +17,21 @@ function App() {
 
 // }
 
+// const onClicHandler =(on:boolean)=>{
+//   setOn(true)
+// }
+type RattingPropsType = {
+  value: 0 | 1 | 2 | 3 | 4 | 5;
+};
+// const[star,setStar]=useState(0)
+
+
+// const buttonPlay =(star:number)=>{
+//   setStar(star)
+// }
+
   return (
+    
     <div className="App">
       {/* <Acordion 
       
@@ -21,12 +40,16 @@ function App() {
        <Acordion 
       titleValue="Users" 
       colapsed={clicks} /> */}
-   < OnOff />
-{/* <Ratting value={0}/>
-<Ratting value={0}/>
-<Ratting value={0}/>
-<Ratting value={0}/>
-<Ratting value={0}/> */}
+   {/* < OnOff /> */}
+   {/* <OnOf />
+
+ 
+   {/* <OnOf on={on} callback={onClicHandler}/>
+   <OnOf on={on} callback={onClicHandler}/> */}
+
+<UncontrolRatting  />
+
+<UncontrollerAcordion titleValue={"нет ни че"} /> 
     
     </div>
   );
