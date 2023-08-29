@@ -1,16 +1,16 @@
 import { useState } from "react";
 
 type PropsType ={
-    // on?:boolean
-    // setOn:()=>void
+onOfCallback:boolean
+setOnOfCallback:()=>void
 }
 
 
 
-export const OnOf = (props:PropsType) => {
+export const OnOfCalback = (props:PropsType) => {
 
 
-    const [on,setOn]= useState(false)
+
 
 const onStyle ={
     width:'30px',
@@ -20,7 +20,7 @@ const onStyle ={
     display:'inline-block',
     marginLeft:'5px',
     padding:'2px',
-    backgroundColor:on?'green':'white'
+    backgroundColor:props.onOfCallback?'green':'white'
   
 
 
@@ -34,7 +34,7 @@ const ofStyle ={
     display:'inline-block',
     marginLeft:'15px',
     padding:'2px',
-    backgroundColor:on?'white':'red'
+    backgroundColor:props.onOfCallback?'white':'red'
   
 }
 const indicatorStyle ={
@@ -44,15 +44,15 @@ const indicatorStyle ={
     border:'1px solid black',
     display:'inline-block',
     marginLeft:'5px',
-    backgroundColor:on?'green':'red'}
+    backgroundColor:props.onOfCallback?'green':'red'}
 
 
 
 
   return (
     <div>
-      <div style={onStyle} onClick={()=>{setOn(!on)}}>On</div> 
-      <div style={ofStyle} onClick={()=>{setOn(!on)}}>Of</div> 
+      <div style={onStyle} onClick={()=>{props.setOnOfCallback()}}>On</div> 
+      <div style={ofStyle} onClick={()=>{props.setOnOfCallback()}}>Of</div> 
       <div style={indicatorStyle}></div>
     </div>
   );

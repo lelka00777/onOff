@@ -1,49 +1,85 @@
-import { useState } from "react";
+
 import "./App.css";
 import { OnOf } from "./Components/OnOf";
 import { OnOff } from "./onOff";
 import { UncontrollerAcordion } from "./UncontrollAcordion";
 import { Ratting } from "./Ratting";
 import { UncontrolRatting } from "./UncontrolRatting";
+import { AcordionCallback } from "./AcordionCallbak";
+import { useState } from "react";
+import { RattingCallback } from "./RattingCallback";
+import { RatinType, RattingCallbackType } from "./RattingCallbackType";
+import { UncontrolRattingAnonimFunction } from "./UncontrolRattingAnonimFunction";
+import { OnOfCalback } from "./Components/onOfCalback";
 // import { Acordion } from "./Acordion";
-// import { useState } from "react";
 // import { Ratting } from "./Ratting";
 
 function App() {
-    // const[clicks,setClick]=useState(false)
+///======================= код к AcordionCallback =============================================
+const [colapsed,setColapsed] = useState(false)
+const colapsedHandler =()=>{
+  setColapsed(!colapsed) 
+// Переключаем состояние между true и false
+}
+// ==============================================================
+// ====================== код к RattingCallback =======================
+const[value, setValue]=useState<number>(0)
+// ==============================================================
 
-// const onclikHandler=(event:boolean)=>{
-//     setClick(event)
+// ====================== код к RattingCallbackType =============
+// c типизацией Стейта
+let[rating, setRating]=useState<RatinType>(0)
+// ==============================================================
+ //======================= код к onOfCalback ==================
+ let [onOfCallback,setOnOfCallback]= useState(false)
 
-// }
-
-// const onClicHandler =(on:boolean)=>{
-//   setOn(true)
-// }
-type RattingPropsType = {
-  value: 0 | 1 | 2 | 3 | 4 | 5;
-};
-// const[star,setStar]=useState(0)
-
-
-// const buttonPlay =(star:number)=>{
-//   setStar(star)
-// }
-
-  return (
+// ====================================================
+return (
     
+
+
     <div className="App">
 
-   < OnOff />
-    <OnOf />
+      
+
+{/* <UncontrolRattingAnonimFunction 
+rating={rating}  
+setRating={setRating} /> */}
+
+{/* 
+      <RattingCallbackType 
+       rating={rating}
+       setRating={setRating} />
+       
+       
+
+<RattingCallback 
+value={value}  
+setValue={setValue}/> */}
+
+
+
+{/* <AcordionCallback 
+titleValue={"Жмякнуть"}  
+colapsed={colapsed}
+callback={colapsedHandler}
+
+/> */}
+
+  {/* < OnOff /> */}
+    {/* <OnOf /> */}
 
  
 
 
-<UncontrolRatting  />
+{/* <UncontrolRatting  /> */}
 
-<UncontrollerAcordion titleValue={"нет ни че"} /> 
-    
+{/* <UncontrollerAcordion titleValue={"нет ни че"} />  */}
+{/* <Ratting value={3} />  */}
+
+    <OnOfCalback 
+    onOfCallback={onOfCallback}
+    setOnOfCallback={()=>setOnOfCallback(!onOfCallback)} />
     </div>
   );
 }
