@@ -28,6 +28,14 @@
   display: flex;
   justify-content: center;
 } */
+
+.selected{
+  color: aliceblue;
+  background-color: rgb(242, 5, 5);
+}
+.noselected{
+  background-color: rgb(255, 255, 255);
+}
 .on {
   padding: 30px;
   display: flex;
@@ -76,4 +84,8 @@
 
 .btn{
   background-color: blue;
+}
+
+.AcordionTitle{
+  color:red
 }

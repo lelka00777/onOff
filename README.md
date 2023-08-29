@@ -1,6 +1,7 @@
-# START https://lelka00777.github.io/onOff/
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### START https://lelka00777.github.io/onOff/
+### Kabzda
+### ​06 - useState​
+### 07 - uncontrolled components 
 
 ## Available Scripts
 
