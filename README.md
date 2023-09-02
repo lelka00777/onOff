@@ -4,7 +4,7 @@
 ### 07 - uncontrolled components 
 ### 08 - Callbacks (part 1)​
 
-## Available Scripts
+## Push
 
 In the project directory, you can run:
 

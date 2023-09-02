@@ -11,8 +11,35 @@ import { RattingCallback } from "./RattingCallback";
 import { RatinType, RattingCallbackType } from "./RattingCallbackType";
 import { UncontrolRattingAnonimFunction } from "./UncontrolRattingAnonimFunction";
 import { OnOfCalback } from "./Components/onOfCalback";
+import { Input } from "./Components/Input";
+import { Destructur } from "./Components/Destructur";
 // import { Acordion } from "./Acordion";
 // import { Ratting } from "./Ratting";
+
+
+
+
+export type PersonType={
+
+  name:string
+  age:number
+  ferstName:string
+  adress:AdressType[]
+  }
+  type AdressType={
+    street:string
+    houses:number
+    kvartira:number
+  }
+  const peson = {
+  name:'lelka', 
+  age:23,
+  ferstName:'lezova',
+  adress:[
+    {street:'turistskay',
+    houses:30,
+    kvartira:409}]
+  }
 
 function App() {
 ///======================= код к AcordionCallback =============================================
@@ -34,26 +61,36 @@ let[rating, setRating]=useState<RatinType>(0)
  let [onOfCallback,setOnOfCallback]= useState(false)
 
 // ====================================================
+
+const props={name:'lelka', age:38,stack:'front'}
+
+// const{name,age,stack}=props
+// let res = name + age + stack + ' + '+  null+ "+ " + NaN +[' 78'] + {nam:99}
+// console.log( res)
+
+
+
+
 return (
     
-
+ 
 
     <div className="App">
 
-      
+<Destructur peson={peson}/>
 
 {/* <UncontrolRattingAnonimFunction 
 rating={rating}  
 setRating={setRating} /> */}
 
-{/* 
-      <RattingCallbackType 
+
+      {/* <RattingCallbackType 
        rating={rating}
-       setRating={setRating} />
+       setRating={setRating} /> */}
        
        
 
-<RattingCallback 
+{/* <RattingCallback 
 value={value}  
 setValue={setValue}/> */}
 
@@ -77,9 +114,10 @@ callback={colapsedHandler}
 {/* <UncontrollerAcordion titleValue={"нет ни че"} />  */}
 {/* <Ratting value={3} />  */}
 
-    <OnOfCalback 
+    {/* <OnOfCalback 
     onOfCallback={onOfCallback}
-    setOnOfCallback={()=>setOnOfCallback(!onOfCallback)} />
+    setOnOfCallback={()=>setOnOfCallback(!onOfCallback)} /> */}
+    {/* <Input /> */}
     </div>
   );
 }

@@ -44,7 +44,7 @@ type PropsStar = {
 };
 
 function Star(props: PropsStar) {
-  console.log("Star rendering");
+
 
   return (
     <span onClick={()=>{props.setValue(props.value)}}>
