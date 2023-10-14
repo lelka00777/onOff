@@ -1,10 +1,11 @@
-import { useState } from "react";
+import {useState} from "react";
 import "./App.css";
-import { OnOf } from "./Components/OnOf";
-import { OnOff } from "./onOff";
-import { UncontrollerAcordion } from "./UncontrollAcordion";
-import { Ratting } from "./Ratting";
-import { UncontrolRatting } from "./UncontrolRatting";
+import {OnOf} from "./Components/OnOf";
+import {OnOff} from "./onOff";
+import {UncontrollerAcordion} from "./UncontrollAcordion";
+import {Ratting} from "./Ratting";
+import {UncontrolRatting} from "./UncontrolRatting";
+import {Acordion} from "./Acordion";
 // import { Acordion } from "./Acordion";
 // import { useState } from "react";
 // import { Ratting } from "./Ratting";
@@ -20,9 +21,9 @@ function App() {
 // const onClicHandler =(on:boolean)=>{
 //   setOn(true)
 // }
-type RattingPropsType = {
-  value: 0 | 1 | 2 | 3 | 4 | 5;
-};
+    type RattingPropsType = {
+        value: 0 | 1 | 2 | 3 | 4 | 5;
+    };
 // const[star,setStar]=useState(0)
 
 
@@ -30,22 +31,20 @@ type RattingPropsType = {
 //   setStar(star)
 // }
 
-  return (
-    
-    <div className="App">
+    return (
 
-   < OnOff />
-    <OnOf />
+        <div className="App">
 
- 
+            {/*<OnOff/>*/}
+            <OnOf />
 
 
-<UncontrolRatting  />
+            {/*<UncontrolRatting/>*/}
+{/*<Acordion   titleValue={'menu'}/>*/}
+            {/*<UncontrollerAcordion titleValue={"нет ни че"}/>*/}
 
-<UncontrollerAcordion titleValue={"нет ни че"} /> 
-    
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;

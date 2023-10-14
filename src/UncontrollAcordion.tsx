@@ -2,7 +2,7 @@ import { useState } from "react";
 
 type PropsType = {
   titleValue: string;
-  colapsed?: boolean;
+  // colapsed?: boolean;
 };
 
 export function UncontrollerAcordion(props: PropsType) {
