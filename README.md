@@ -2,8 +2,8 @@
 ### Kabzda
 ### ​06 - useState​
 ### 07 - uncontrolled components 
-### 08 - Callbacks (part 1)​
-### 09 - Callbacks (part 2)​
+### 08 - Callbacks (part 1)​-
+### 09 - Callbacks (part 2)​-
 
 ## Available Scripts
 
