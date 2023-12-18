@@ -1,6 +1,6 @@
 ### START https://lelka00777.github.io/onOff/
 ### Kabzda
-## 13 - controlled input, checkbox, select
+### 13 - controlled input, checkbox, select
 ## 12 - uncontrolled input
 ## 11  Storybook,defaultValue,повторение 
 ## 10 - 2 Storybook
